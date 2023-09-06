@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.nav{
+    /* height: 10%;
+    width: 100%;
+    border: 0px;
+    margin: 0;*/
+
+    background-color: #2b6777; 
+
+    background-image: linear-gradient(to right,#2b6777,#5d8b97);
+    margin: 0px 0px;
+    padding: 0px 0px;
+  
+    width: 100%;
+    flex: 1;
+    height: 107px;
+}
+
+.col_1{
+    box-sizing: border-box;
+    padding: 0px 15px;
+    height: 100%;
+    width: 60%;
+    /* display: block; */
+    text-align: left;
+    float: left;
+}
+
+.col_2{
+    box-sizing: border-box;
+    padding: 0px 0px 0px 15px;
+    width: 40%;
+    height:100%;
+    flex-basis: 20%;
+    display: block;
+    text-align: center;
+    float: right;
+    align-items: first baseline;
+}
+
+.nav_1{
+    display: inline-block;
+    height: 100%;
+}
+
+.side_btn{
+    border: none;
+    /*font-weight: bold;*/
+    text-align: center;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0 0 0 0px;
+    padding: 20px;
+    font-size: 15px;
+    color:white;
+    height:100%;
+}
+
+.side_btn:hover{
+    background-color: #c8d8e4;
+    color:black;
+    transition-delay: 100ms;
+    border-radius: 5px;
+}
+
+.row_2{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+    flex: 1;
+    height: 544px;
+}
+
+.pic{
+    box-sizing: border-box;
+    padding: 0px 0px 0px 15px;
+    width: 50%;
+    height:100%;
+    flex-basis: 20%;
+    display: block;
+    float: right;
+    align-items: first baseline;
+}
+
+.text_1{
+    box-sizing: border-box;
+    padding: 0px 0px 0px 15px;
+    width: 50%;
+    height:100%;
+    flex-basis: 20%;
+    display: block;
+    float: left;
+    align-items: first baseline;
+
+}
+
+.tex{
+
+    font-family: "Poppins", sans-serif;
+    margin-top: 20%;
+    margin-bottom: 25px;
+    margin-left: 20%;
+    display: block;
+    width: 100%;
+    font-size: large;
+}
+
+.start_btn{
+   
+    border-radius: 30px;
+    background-color: #2b6777;
+    border-style: none;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.start_btn:hover{
+
+    background-color: #563434;
+}
+
+ h1{
+
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+p{
+    text-decoration: none;
+    color: #555
+}
