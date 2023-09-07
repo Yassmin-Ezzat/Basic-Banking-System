@@ -25,17 +25,17 @@ app.get('/Home', function(req, res) {
 
 //customers page
 app.get('/Customers', function(req, res) {
-  res.render('\customers.ejs');
+  res.render('/customers.ejs');
 });
 
 //Transfer
 app.get('/Transfer', function(req, res) {
-  res.render('\transfer.ejs');
+  res.render('transfer.ejs');
 });
 
 //Transactions
-app.get('/transactions', function(req, res) {
-  res.render('\transactions.ejs');
+app.get('/Transactions', function(req, res) {
+  res.render('/transactions.ejs');
 });
 
 
