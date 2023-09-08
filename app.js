@@ -2,7 +2,8 @@ var express = require('express');
 var app = express();
 const dotenv = require('dotenv');
 var connectDB= require('./config/db.js');
-
+const mongoose = require('mongoose');
+const Customer = require('./models/customer.js');
 
 
 dotenv.config();
@@ -27,16 +28,34 @@ app.get('/Home', function(req, res) {
 });
 
 //customers page
-app.get('/Customers', function(req, res) {
-  res.render('/customers.ejs');
-});
+// app.get('/Customers', function(req, res) {
+// res.render('customers.ejs');
+// });
 
-//Transfer
+app.get('/Customers', async (req, res) => {
+  try {
+
+
+    console.log('done.')
+      const customers = await Customer.find({}); // Fetch all customers from the database    
+      res.render('customers', { customers }); // Render the customers.ejs view with the fetched data
+  } catch (error) {
+      console.error('Error fetching customers:', error);
+      res.status(500).send('Internal Server Error');
+  }
+
+
+}
+
+
+);
+
+//Transfer page
 app.get('/Transfer', function(req, res) {
   res.render('transfer.ejs');
 });
 
-//Transactions
+//Transactions page
 app.get('/Transactions', function(req, res) {
   res.render('/transactions.ejs');
 });
