@@ -1,0 +1,18 @@
+.Form-1 {
+
+    width: max-content;
+    padding: 20px;
+    margin-left: 40%;
+}
+
+input.element {
+    padding: 13px;
+    margin-left: 23px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    color: black;
+    width: 80%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
