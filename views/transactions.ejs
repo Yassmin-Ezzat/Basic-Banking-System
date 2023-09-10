@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/nav.ejs') %>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/customers.css" />
+
+        <title>Document</title>
+    </head>
+
+    <body>
+            <h1>Transactions</h1>
+            <table class="table-1">
+                <tr>
+                    <th>Sender</th>
+                    <th>Receiver</th>
+                    <th>Amount Transffered</th>
+                    <th>Date and Time</th>
+                </tr>
+            
+                <% transactions.forEach(function(transaction) { %>
+                <tr class="table-rt">
+                    <td>
+                        <%= transaction.Sender %>
+                    </td>
+                    <td>
+                        <%= transaction.Receiver %>
+                    </td>
+                    <td>
+                        <%= transaction.AmountTransffered %>
+                    </td>
+                    <td>
+                        <%= transaction.Date %>
+                    </td>
+                </tr>
+            <% }); %>
+        </table>
+
+    </body>
+
+</html>
