@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/nav.ejs') %>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/customers.css" />
+
+        <title>Document</title>
+    </head>
+
+    <body>
+            <h1>Customers</h1>
+            <table class="table-1">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Balance</th>
+                    <th>Account Number</th>
+                </tr>
+            
+                <% customers.forEach(function(customer) { %>
+                <tr class="table-r" onclick="openProfile('<%= JSON.stringify(customer) %>')">
+                    <td>
+                        <%= customer.Name %>
+                    </td>
+                    <td>
+                        <%= customer.Email %>
+                    </td>
+                    <td>
+                        <%= customer.PhoneNumber %>
+                    </td>
+                    <td>
+                        <%= customer.currentBalance %>
+                    </td>
+                    <td>
+                        <%= customer._id %>
+                    </td>
+                </tr>
+            <% }); %>
+        </table>
+            <div class="profile-1">
+
+                <h1>Account</h1>
+                <p class="pro-la"> Account Number: </p>
+                <p class="pro-la"> Name: </p>
+                <p class="pro-la"> Email: </p>
+                <p class="pro-la"> Current Balance: </p>
+                <input type="hidden" id="customerID" name="customerID">
+
+                <button id="close" onclick="closeProfile()" class="subm">Back</button>
+                <input class="subm" type="submit" onclick="window.location.href='/Transfer'" value="Transfer">
+            </div>
+        </body>
+
+        <script type="text/javascript" src="../js/profile.js"></script>
+
+</html> 
