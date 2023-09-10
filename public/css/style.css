@@ -9,17 +9,10 @@ body{
 }
 
 .nav{
-    /* height: 10%;
-    width: 100%;
-    border: 0px;
-    margin: 0;*/
-
     background-color: #2b6777; 
-
     background-image: linear-gradient(to right,#2b6777,#5d8b97);
     margin: 0px 0px;
     padding: 0px 0px;
-  
     width: 100%;
     flex: 1;
     height: 107px;
@@ -30,7 +23,6 @@ body{
     padding: 0px 15px;
     height: 100%;
     width: 60%;
-    /* display: block; */
     text-align: left;
     float: left;
 }
@@ -127,7 +119,7 @@ body{
 }
 .start_btn:hover{
 
-    background-color: #563434;
+    background-color: #00303d;
 }
 
 h1{

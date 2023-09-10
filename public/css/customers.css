@@ -1,0 +1,92 @@
+h1 {
+    margin: 20px;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px;
+    margin-left: 10%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #2b6777;
+    color: white;
+    font-weight: normal;
+}
+
+tr:nth-child(even) {
+    background-color: #bcc6e7;
+}
+
+.table-r:hover {
+
+    background-color: #2b6777;
+    color: white;
+    cursor: pointer;
+}
+.table-rt:hover{
+    background-color: #2b6777;
+    color: white;
+}
+.profile-1 {
+
+    display: none;
+    width: 30%;
+    height: 40%;
+    padding: 20px;
+    margin-left: 32%;
+    margin-right: 40%;
+    margin-top: 10%;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    z-index: 9999;
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.425);
+
+}
+
+.profile-1 h1 {
+
+    margin-left: 25%
+}
+
+.subm {
+    background-color: #2b6777;
+    color: white;
+    padding: 10px;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    width: 25%;
+    font-size: 15px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.subm:hover {
+
+    background-color: #00303d;
+
+}
+
+
+.pro-la {
+    padding: 13px;
+}
