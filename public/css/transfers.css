@@ -17,7 +17,7 @@ input.element {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     color: black;
-    width: 80%;
+    width: 78%;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     flex: auto;
@@ -47,4 +47,31 @@ input.element {
   h1{
 
     margin-left:18%
+  }
+
+  #options{
+
+    padding: 13px;
+    margin-left: 18px;
+    margin-right: 23px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    color: black;
+    width: 92%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    flex: auto;
+
+    font-size: 14px;
+    width:88%;
+  }
+
+   .content {
+    color: black;
+    padding:  16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin:15px;
   }
