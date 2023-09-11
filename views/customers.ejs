@@ -40,7 +40,7 @@
                         <%= customer._id %>
                     </td>
                 </tr>
-            <% }); %>
+            <% }); %> <script type="text/javascript" src="../js/profile.js"></script>
         </table>
             <div class="profile-1">
 
@@ -49,13 +49,12 @@
                 <p class="pro-la"> Name: </p>
                 <p class="pro-la"> Email: </p>
                 <p class="pro-la"> Current Balance: </p>
-                <input type="hidden" id="customerID" name="customerID">
-
+                <input type="hidden" id="customerID" name="customerID" value="">
                 <button id="close" onclick="closeProfile()" class="subm">Back</button>
-                <input class="subm" type="submit" onclick="window.location.href='/Transfer'" value="Transfer">
+                <td><a class="subm subm-transfer-link" href="#">Transfer</a></td>
             </div>
         </body>
 
-        <script type="text/javascript" src="../js/profile.js"></script>
+       
 
 </html> 
