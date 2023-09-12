@@ -1,77 +1,92 @@
 .Form-1 {
-    padding: 20px;
-    margin-left: 35%;
-    margin-right: 40%;
-    margin-top: 3%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);;
-    /* border-color: ; */
-    border-radius: 10px;
+  padding: 20px;
+  margin-left: 35%;
+  margin-right: 40%;
+  margin-top: 3%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 input.element {
-    padding: 13px;
-    margin-left: 18px;
-    margin-right: 23px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    color: black;
-    width: 78%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    flex: auto;
+  padding: 13px;
+  margin-left: 18px;
+  margin-right: 23px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  color: black;
+  width: 78%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  flex: auto;
 }
 
 .subm {
-    background-color: #2b6777;
-    color: white;
-    padding: 10px;
-    margin-left: 15%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    width: 70%;
-    font-size: 15px;
-    border-color: transparent;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .subm:hover{
-  
-    background-color: #00303d;
-  
-  }
+  background-color: #2b6777;
+  color: white;
+  padding: 10px;
+  margin-left: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  width: 70%;
+  font-size: 15px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: 1s;
+}
 
-  h1{
+.subm:hover {
 
-    margin-left:18%
-  }
+  background-color: #00303d;
 
-  #options{
+}
 
-    padding: 13px;
-    margin-left: 18px;
-    margin-right: 23px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    color: black;
-    width: 92%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    flex: auto;
+h1 {
 
-    font-size: 14px;
-    width:88%;
-  }
+  margin-left: 18%
+}
 
-   .content {
-    color: black;
-    padding:  16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    margin:15px;
-  }
+#options {
+
+  padding: 13px;
+  margin-left: 18px;
+  margin-right: 23px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  color: black;
+  width: 92%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  flex: auto;
+
+  font-size: 14px;
+  width: 88%;
+}
+
+.content {
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 15px;
+}
+
+.success {
+  color: green;
+  margin-left: 8%;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.error {
+  color: red;
+  margin-left: 8%;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: large;
+}
