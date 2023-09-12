@@ -35,10 +35,12 @@ tr:nth-child(even) {
     color: white;
     cursor: pointer;
 }
-.table-rt:hover{
+
+.table-rt:hover {
     background-color: #2b6777;
     color: white;
 }
+
 .profile-1 {
 
     display: none;
@@ -78,6 +80,33 @@ tr:nth-child(even) {
     border-color: transparent;
     cursor: pointer;
     transition: 1s;
+}
+
+
+#transfer {
+    background-color: #2b6777;
+    color: white;
+    padding: 20px;
+    padding-top: 3%;
+    padding-left: 6%;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    width: 15%;
+    height: 3%;
+    font-size: 15px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+    display: -webkit-inline-box;
+}
+
+#transfer:hover {
+
+    background-color: #00303d;
+
 }
 
 .subm:hover {
