@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/transfers.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
+</head>
+
+<body>
+
+    <%- include('partials/nav.ejs') %>
+
+
+        <div class="Form-1">
+            <div class="Title">
+                <h1>Transfer</h1>
+            </div>
+
+
+            <div class="inputs">
+                <form id="myForm" name="TransferForm" action="/transfer/validation" method="post">
+                    <input type="text" class="element" id="account_number_from" name="from"
+                        placeholder="From Account Number" required title="From you."
+                        value="<%= customerID %>"><br>
+                    <select class="element" id="options" name="to" placeholder="To Account Number" required
+                        title="Please select the account you want to transfer money to."><br>
+                        <option value="To Account">To Account</option>
+                        <% customers.forEach((customer)=>{%>
+                            <option class="content" value="<%= customer._id%>">
+                                <%= customer.Name%> , <%= customer._id%>
+                            </option>
+                            <%});%>
+                    </select>
+                    <input type="text" class="element" id="amount" name="amount" placeholder="Amount to Transfer"
+                        required title="Please enter the amount of money you want to transfer"><br>
+                    <div id="responseDiv"></div>
+                    <input id="transfer-1" class="subm" type="submit" value="Transfer">
+                </form>
+            </div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/ajax_transfer_response.js"></script>
+
+</html>
