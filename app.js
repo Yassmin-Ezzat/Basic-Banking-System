@@ -35,6 +35,7 @@ app.get('/Home', function (req, res) {
   res.render('\index.ejs');
 });
 
+//customers page
 app.get('/Customers', async (req, res) => {
   try {
     const customers = await Customer.find({});
@@ -45,7 +46,7 @@ app.get('/Customers', async (req, res) => {
   }
 });
 
-
+//transfer page
 app.get('/Transfer', async (req, res) => {
   try {
 
