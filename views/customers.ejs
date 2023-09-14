@@ -8,6 +8,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/customers.css" />
 
+        <style>  @media screen and (max-width: 804px) {
+
+            h1{
+        
+                margin-left:25%;
+            }
+        
+            table{
+                margin-left:10px;
+            }
+          }
+          
+          @media screen and (max-width: 732px) {
+            
+            h1{
+        
+                margin-left:25%;
+            }
+            table{
+                margin-left:0px;
+            }
+          }
+        </style>
+
         <title>Document</title>
     </head>
 
@@ -19,7 +43,6 @@
                     <th>Email</th>
                     <th>Phone Number</th>
                     <th>Balance</th>
-                    <th>Account Number</th>
                 </tr>
             
                 <% customers.forEach(function(customer) { %>
@@ -35,9 +58,6 @@
                     </td>
                     <td>
                         <%= customer.currentBalance %>
-                    </td>
-                    <td>
-                        <%= customer._id %>
                     </td>
                 </tr>
             <% }); %> <script type="text/javascript" src="../js/profile.js"></script>
