@@ -234,3 +234,10 @@ tr:nth-child(even) {
         width:50%;
     }
   }
+
+  ::selection{
+
+    background-color:#dddddd;
+    color: black;
+
+  }

@@ -294,3 +294,10 @@ p{
         display:none;
     }
   }
+
+::selection{
+
+    background-color:#dddddd;
+    color: black;
+
+  }
