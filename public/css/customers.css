@@ -45,7 +45,6 @@ tr:nth-child(even) {
 
     display: none;
     width: 30%;
-    height: 40%;
     padding: 20px;
     margin-left: 32%;
     margin-right: 40%;
@@ -120,16 +119,75 @@ tr:nth-child(even) {
     padding: 13px;
 }
 
+
+@media screen and (max-width: 1255px) {
+
+    
+    .profile-1 {
+    
+        margin-left: 30%;
+        
+       margin-right: 35%;
+    }
+
+  }
+
+@media screen and (max-width: 1205px) {
+
+    
+    .profile-1 {
+    
+        margin-left: 30%;
+        
+       margin-right: 35%;
+    }
+
+  }
+  
+  @media screen and (max-width: 1175px) {
+
+    
+    .profile-1 {
+    
+        margin-left: 25%;
+        
+    margin-right: 40%;
+    width: 33%;
+
+    }
+
+  }
+
 @media screen and (max-width: 1080px) {
 
     
     .profile-1 h1 {
     
-        margin-left: 20%
+        margin-left: 20%;
     }
 
   }
 
+  @media screen and (max-width: 1070px) {
+
+    
+  
+        .profile-1  {
+            width: 35%;
+        }
+   }
+    
+    @media screen and (max-width: 1070px) {
+
+    
+    .profile-1 {
+    
+        
+            width: 35%;
+        
+    }
+
+  }
 
   @media screen and (max-width: 950px) {
 
@@ -155,8 +213,29 @@ tr:nth-child(even) {
     
         margin-left: 15%
     }
+    .profile-1  {
+        width:50%;
+        margin-top: 20%;
+        height: 28%;
+        margin-right: 25%
+    }
     
-  }  @media screen and (max-width: 775px) {
+  } 
+
+  @media screen and (max-width: 768px) {
+  
+      
+    .profile-1  {
+        width: 78%;
+        margin-left:5%;
+        margin-right: 10%;
+        margin-top: 30%;
+        height: 40%;
+    }
+    
+  }
+  
+  @media screen and (max-width: 775px) {
   
       
     h1{
@@ -220,10 +299,18 @@ tr:nth-child(even) {
     table{
         margin-left:10px;
     }
+
+    .profile-1  {
+        width: 80%;
+        margin-left:5%;
+        margin-right: 10%;
+        margin-top: 30%;
+        height: 40%;
+    }
   }
 
     
-  @media screen and (max-width: 364px) {
+  @media screen and (max-width: 375px) {
     
     h1{
 
@@ -232,6 +319,22 @@ tr:nth-child(even) {
     table{
         margin-left:10px;
         width:50%;
+    }
+
+    .profile-1  {
+        width: 100%;
+        margin-left:0%;
+        margin-right: 0%;
+        margin-top: 30%;
+    }
+
+    .Form-1{
+
+        width: 100%;
+        margin-left: 0%; 
+      margin-right: 0%;
+      background-color: rgb(255, 255, 255); 
+     box-shadow: none;
     }
   }
 

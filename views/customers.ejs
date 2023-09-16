@@ -1,77 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('partials/nav.ejs') %>
+<%- include('partials/nav.ejs') %>
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/customers.css" />
 
-        <style>  @media screen and (max-width: 804px) {
+        <style>
+            @media screen and (max-width: 804px) {
 
-            h1{
-        
-                margin-left:25%;
+                h1 {
+
+                    margin-left: 25%;
+                }
+
+                table {
+                    margin-left: 10px;
+                }
             }
-        
-            table{
-                margin-left:10px;
+
+            @media screen and (max-width: 732px) {
+
+                h1 {
+
+                    margin-left: 25%;
+                }
+
+                table {
+                    margin-left: 0px;
+                }
+
+                @media screen and (max-width: 499px) {
+
+                   .num-1{
+
+                     display: none;
+                     
+                   }
+                   table .num-2{
+
+                    width:150px;
+                   }
+                }
             }
-          }
-          
-          @media screen and (max-width: 732px) {
-            
-            h1{
-        
-                margin-left:25%;
-            }
-            table{
-                margin-left:0px;
-            }
-          }
         </style>
 
         <title>Document</title>
     </head>
 
     <body>
-            <h1>Customers</h1>
-            <table class="table-1">
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
-                    <th>Balance</th>
-                </tr>
-            
-                <% customers.forEach(function(customer) { %>
+        <h1>Customers</h1>
+        <table class="table-1">
+            <tr>
+                <th>Name</th>
+                <th class="num-2">Email</th>
+                <th class="num-1">Phone Number</th>
+                <th>Balance</th>
+            </tr>
+
+            <% customers.forEach(function(customer) { %>
                 <tr class="table-r" onclick="openProfile('<%= JSON.stringify(customer) %>')">
                     <td>
                         <%= customer.Name %>
                     </td>
-                    <td>
+                    <td class="num-2">
                         <%= customer.Email %>
                     </td>
-                    <td>
+                    <td class="num-1">
                         <%= customer.PhoneNumber %>
                     </td>
                     <td>
                         <%= customer.currentBalance %>
                     </td>
                 </tr>
-            <% }); %> <script type="text/javascript" src="../js/profile.js"></script>
+                <% }); %>
+                    <script type="text/javascript" src="../js/profile.js"></script>
         </table>
-            <div class="profile-1">
+        <div class="profile-1">
 
-                <h1>Account</h1>
-                <p class="pro-la"> Account Number: </p>
-                <p class="pro-la"> Name: </p>
-                <p class="pro-la"> Email: </p>
-                <p class="pro-la"> Current Balance: </p>
-                <input type="hidden" id="customerID" name="customerID" value="">
-                <button id="close" onclick="closeProfile()" class="subm">Back</button>
-                <a id="transfer" class="subm-transfer-link" href="#">Transfer</a>
-            </div>
-        </body>
-</html> 
+            <h1>Account</h1>
+            <p class="pro-la"> Account Number: </p>
+            <p class="pro-la"> Name: </p>
+            <p class="pro-la"> Email: </p>
+            <p class="pro-la"> Current Balance: </p>
+            <input type="hidden" id="customerID" name="customerID" value="">
+            <button id="close" onclick="closeProfile()" class="subm">Back</button>
+            <a id="transfer" class="subm-transfer-link" href="#">Transfer</a>
+        </div>
+    </body>
+
+</html>

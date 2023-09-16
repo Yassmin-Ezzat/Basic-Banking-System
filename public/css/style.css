@@ -1,16 +1,16 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
-.nav{
-    background-color: #2b6777; 
-    background-image: linear-gradient(to right,#2b6777,#5d8b97);
+.nav {
+    background-color: #2b6777;
+    background-image: linear-gradient(to right, #2b6777, #5d8b97);
     margin: 0px 0px;
     padding: 0px 0px;
     width: 100%;
@@ -18,7 +18,7 @@ body{
     height: 107px;
 }
 
-.col_1{
+.col_1 {
     box-sizing: border-box;
     padding: 0px 15px;
     height: 100%;
@@ -27,11 +27,11 @@ body{
     float: left;
 }
 
-.col_2{
+.col_2 {
     box-sizing: border-box;
     padding: 0px 0px 0px 15px;
     width: 40%;
-    height:100%;
+    height: 100%;
     flex-basis: 20%;
     display: block;
     text-align: center;
@@ -39,12 +39,12 @@ body{
     align-items: first baseline;
 }
 
-.nav_1{
+.nav_1 {
     display: inline-block;
     height: 100%;
 }
 
-.side_btn{
+.side_btn {
     border: none;
     text-align: center;
     background-color: inherit;
@@ -52,18 +52,18 @@ body{
     margin: 0 0 0 0px;
     padding: 20px;
     font-size: 15px;
-    color:white;
-    height:100%;
+    color: white;
+    height: 100%;
 }
 
-.side_btn:hover{
+.side_btn:hover {
     background-color: #c8d8e4;
-    color:black;
+    color: black;
     transition-delay: 100ms;
     border-radius: 5px;
 }
 
-.row_2{
+.row_2 {
     margin: 0px 0px;
     padding: 0px 0px;
     width: 100%;
@@ -71,22 +71,22 @@ body{
     height: 544px;
 }
 
-.pic{
+.pic {
     box-sizing: border-box;
     padding: 0px 0px 0px 15px;
     width: 50%;
-    height:100%;
+    height: 100%;
     flex-basis: 20%;
     display: block;
     float: right;
     align-items: first baseline;
 }
 
-.text_1{
+.text_1 {
     box-sizing: border-box;
     padding: 0px 0px 0px 15px;
     width: 50%;
-    height:100%;
+    height: 100%;
     flex-basis: 20%;
     display: block;
     float: left;
@@ -94,7 +94,7 @@ body{
 
 }
 
-.tex{
+.tex {
 
     font-family: "Poppins", sans-serif;
     margin-top: 20%;
@@ -105,8 +105,8 @@ body{
     font-size: large;
 }
 
-.start_btn{
-   
+.start_btn {
+
     border-radius: 30px;
     background-color: #2b6777;
     border-style: none;
@@ -116,30 +116,124 @@ body{
     transition: 0.5s;
     cursor: pointer;
 }
-.start_btn:hover{
+
+.start_btn:hover {
 
     background-color: #00303d;
 }
 
-h1{
+h1 {
 
     font-size: 50px;
     margin-bottom: 20px;
 
 }
 
-p{
+p {
     text-decoration: none;
     color: #555
 }
 
+@media screen and (max-width: 1081px) {
+
+    .pic {
+        width: 60%;
+    }
+
+    .text_1 {
+
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 958px) {
+
+    .pic {
+        width: 70%;
+    }
+
+    .text_1 {
+
+        width: 30%;
+    }
+}
+@media screen and (max-width: 912px) {
+
+    .pic {
+        width: 60%;
+        margin-top: 7%;
+    }
+
+    .text_1 {
+
+        width: 40%;
+    }
+}
+@media screen and (max-width: 901px) {
+
+    .pic {
+        width: 60%;
+    }
+
+    .text_1 {
+
+        width: 40%;
+    }
+}
+@media screen and (max-width: 729px) {
+
+    .pic {
+        width: 60%;
+        margin-top: 30%;
+    }
+
+    .text_1 {
+
+        width: 40%;
+    }
+}
+@media screen and (max-width: 669px) {
+
+    .pic {
+        width: 60%;
+        margin-top: 40%;
+    }
+
+    .text_1 {
+
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 669px) {
+
+    .pic {
+        width: 50%;
+        margin-top: 50%;
+    }
+
+    .text_1 {
+
+        width: 50%;
+    }
+}
 
 @media screen and (max-width: 835px) {
+
+    .pic {
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .text_1 {
+
+        width: 50%;
+    }
     .col_2 {
         box-sizing: border-box;
         padding: 0px 0px 0px 15px;
         width: 50%;
-        height:100%;
+        height: 100%;
         flex-basis: 20%;
         display: block;
         text-align: center;
@@ -147,7 +241,7 @@ p{
         align-items: first baseline;
     }
 
-    .col_1{
+    .col_1 {
         box-sizing: border-box;
         padding: 0px 15px;
         height: 100%;
@@ -155,14 +249,14 @@ p{
         text-align: left;
         float: left;
     }
-  }
+}
 
-  @media screen and (max-width: 668px) {
+@media screen and (max-width: 668px) {
     .col_2 {
         box-sizing: border-box;
         padding: 0px 0px 0px 15px;
         width: 60%;
-        height:100%;
+        height: 100%;
         flex-basis: 20%;
         display: block;
         text-align: center;
@@ -170,7 +264,7 @@ p{
         align-items: first baseline;
     }
 
-    .col_1{
+    .col_1 {
         box-sizing: border-box;
         padding: 0px 15px;
         height: 100%;
@@ -178,15 +272,15 @@ p{
         text-align: left;
         float: left;
     }
-  }
+}
 
 
-  @media screen and (max-width: 557px) {
+@media screen and (max-width: 557px) {
     .col_2 {
         box-sizing: border-box;
         padding: 0px 0px 0px 15px;
         width: 70%;
-        height:100%;
+        height: 100%;
         flex-basis: 20%;
         display: block;
         text-align: center;
@@ -194,7 +288,7 @@ p{
         align-items: first baseline;
     }
 
-    .col_1{
+    .col_1 {
         box-sizing: border-box;
         padding: 0px 15px;
         height: 100%;
@@ -203,17 +297,19 @@ p{
         float: left;
     }
 
-    .nav{
+    .nav {
         margin: 0px 0px;
         padding: 0px 0px;
         width: 100%;
     }
-  }  @media screen and (max-width: 514px) {
+}
+
+@media screen and (max-width: 514px) {
     .col_2 {
         box-sizing: border-box;
         padding: 0px 0px 0px 15px;
         width: 70%;
-        height:100%;
+        height: 100%;
         flex-basis: 20%;
         display: block;
         text-align: center;
@@ -221,7 +317,7 @@ p{
         align-items: first baseline;
     }
 
-    .col_1{
+    .col_1 {
         box-sizing: border-box;
         padding: 0px 15px;
         height: 100%;
@@ -230,18 +326,19 @@ p{
         float: left;
     }
 
-    .nav{
+    .nav {
         margin: 0px 0px;
         padding: 0px 0px;
         width: 100%;
     }
-  }
-  @media screen and (max-width: 478px) {
+}
+
+@media screen and (max-width: 478px) {
     .col_2 {
         box-sizing: border-box;
         padding: 0px 0px 0px 15px;
         width: 85%;
-        height:100%;
+        height: 100%;
         flex-basis: 20%;
         display: block;
         text-align: center;
@@ -249,7 +346,7 @@ p{
         align-items: first baseline;
     }
 
-    .col_1{
+    .col_1 {
         box-sizing: border-box;
         padding: 0px 15px;
         height: 100%;
@@ -258,24 +355,27 @@ p{
         float: left;
     }
 
-    .nav{
+    .nav {
         margin: 0px 0px;
         padding: 0px 0px;
         width: 100%;
     }
-  }  @media screen and (max-width: 439px) {
+}
+
+@media screen and (max-width: 439px) {
     .col_2 {
         box-sizing: border-box;
         padding: 0px 0px 0px 15px;
         width: 85%;
-        height:100%;
+        height: 100%;
         flex-basis: 20%;
         display: block;
         text-align: center;
         float: right;
         align-items: first baseline;
     }
-    .col_1{
+
+    .col_1 {
         box-sizing: border-box;
         padding: 0px 15px;
         height: 100%;
@@ -284,20 +384,45 @@ p{
         float: left;
     }
 
-    .nav{
+    .nav {
         margin: 0px 0px;
         padding: 0px 0px;
         width: 100%;
     }
 
-    #num1{
-        display:none;
+    #num1 {
+        display: none;
     }
-  }
+}
 
-::selection{
+@media screen and (max-width: 571px) {
 
-    background-color:#dddddd;
+    .pic {
+        width: 50%;
+        margin-top: 50%;
+    }
+
+    .text_1 {
+
+        width: 50%;
+    }
+}
+@media screen and (max-width: 452px) {
+
+    .pic {
+        width: 50%;
+        margin-top: 100%;
+    }
+
+    .text_1 {
+
+        width: 50%;
+    }
+}
+
+::selection {
+
+    background-color: #dddddd;
     color: black;
 
-  }
+}
