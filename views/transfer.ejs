@@ -32,8 +32,8 @@
                         title="Please select the account you want to transfer money to."><br>
                         <option value="To Account">To Account</option>
                         <% customers.forEach((customer)=>{%>
-                            <option class="content" value="<%= customer._id%>">
-                                <%= customer.Name%> , <%= customer._id%>
+                            <option class="content" value="<%= customer.AccountNumber%>">
+                                <%= customer.Name%> , <%= customer.AccountNumber%>
                             </option>
                             <%});%>
                     </select>

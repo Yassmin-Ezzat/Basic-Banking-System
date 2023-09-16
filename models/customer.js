@@ -21,6 +21,9 @@ const customerSchema = new mongoose.Schema({
     currentBalance:{
 
         type: Number
+    },
+    AccountNumber:{
+        type: String
     }
 });
 

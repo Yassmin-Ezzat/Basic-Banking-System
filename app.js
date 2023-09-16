@@ -51,7 +51,7 @@ app.get('/Transfer', async (req, res) => {
   try {
 
     const customerID = req.query.customer_Id;
-    const customers = await Customer.find({ _id: { $ne: customerID } });
+    const customers = await Customer.find({ AccountNumber: { $ne: customerID } });
     res.render('transfer', { customerID, customers });
 
   } catch (error) {
@@ -72,8 +72,8 @@ app.post('/transfer/validation', async (req, res) => {
 
 
     const amount1 = parseFloat(amount);
-    const from1 = await Customer.findOne({ _id: from });
-    const to1 = await Customer.findOne({ _id: to });
+    const from1 = await Customer.findOne({ AccountNumber: from });
+    const to1 = await Customer.findOne({ AccountNumber: to });
 
     if (from1.currentBalance >= amount1) {
       from1.currentBalance = from1.currentBalance - amount1;
